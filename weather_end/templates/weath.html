@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherWise</title>
+    <link rel="icon" href="{{  url_for('static', filename='title_img.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='weath.css') }}">
+    
+</head>
+<body>
+    <header>
+        <h1>WeatherWise</h1>
+        <h3>Accurate Weather Updates for Cities Accross the Globe</h3>
+    </header>
+    
+    <div class="input-container">
+        <form id="weather_form">
+            <input type="text" id="cityName" placeholder="Enter City Name"/>
+            <button id="search_id">Search</button>
+        </form>
+    </div>
+
+    <div class="weather">
+        <img id="icon" alt="">
+        <div class="weather-info">
+            <h2 id="weather-temp"></h2>
+            <p id="condition"></p>
+            <p id="wind-speed"></p>
+            <p id="humid"></p>
+            <p id="pressure"></p>
+        </div>
+    </div>
+
+    <div class="forecast">
+        <h2 id="fore_heading"></h2>
+
+        <div id="fore_days">
+            <div class="forecast_day" id="one">
+                <p id="day_1"></p>
+                <div class="forecast-info">
+                    <img id="fore_icon_1" alt="">
+                    <h2 id="fore_temp_1"></h2>
+                    <p id="condition_1"></p>
+                    <p id="wind-speed_1"></p>
+                    <p id="humid_1"></p>
+                    <p id="pressure_1"></p>
+                </div>
+            </div>
+
+            <div class="forecast_day">
+                <p id="day_2"></p>
+                <div class="forecast-info">
+                    <img id="fore_icon_2" alt="">
+                    <h2 id="fore_temp_2"></h2>
+                    <p id="condition_2"></p>
+                    <p id="wind-speed_2"></p>
+                    <p id="humid_2"></p>
+                    <p id="pressure_2"></p>
+                </div>
+            </div>
+
+            <div class="forecast_day">
+                <p id="day_3"></p>
+                <div class="forecast-info">
+                    <img id="fore_icon_3" alt="">
+                    <h2 id="fore_temp_3"></h2>
+                    <p id="condition_3"></p>
+                    <p id="wind-speed_3"></p>
+                    <p id="humid_3"></p>
+                    <p id="pressure_3"></p>
+                </div>
+            </div>
+
+            <div class="forecast_day">
+                <p id="day_4"></p>
+                <div class="forecast-info">
+                    <img id="fore_icon_4" alt="">
+                    <h2 id="fore_temp_4"></h2>
+                    <p id="condition_4"></p>
+                    <p id="wind-speed_4"></p>
+                    <p id="humid_4"></p>
+                    <p id="pressure_4"></p>
+                </div>
+            </div>
+
+            <div class="forecast_day">
+                <p id="day_5"></p>
+                <div class="forecast-info">
+                    <img id="fore_icon_5" alt="">
+                    <h2 id="fore_temp_5"></h2>
+                    <p id="condition_5"></p>
+                    <p id="wind-speed_5"></p>
+                    <p id="humid_5"></p>
+                    <p id="pressure_5"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Sinmisola Ajao. All rights reserved.</p>
+        <p>Contact: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=: sinmisolaemmanuel@gmail.com"  target="_blank">sinmisolaemmanuel@gmail.com</a></p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{  url_for('static', filename='script.js')  }}"></script>
+</body>
+
+</html>

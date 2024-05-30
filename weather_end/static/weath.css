@@ -1,0 +1,132 @@
+body {
+    
+    background-image: url('back-image.jpg');
+    color: antiquewhite;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h3{
+    
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+#weather_form{
+    text-align: center;
+    margin-top: 60px;
+    size: 20%;
+    
+}
+
+#cityName{
+    font-size: 20px;
+}
+
+#search_id{
+    font-size: 19px;
+    background-color: #FF5A5F;
+    color: #FFFFFF;
+    opacity: 1;
+  
+    border-radius: 5px;
+}
+
+#search_id button:hover{
+    opacity: 0.9;
+}
+
+.weather {
+    margin-left: 300px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.weather-info{
+    margin-top: -30px;
+   font-size: 19px;
+}
+
+#weather-temp{
+    margin-left: 150px;
+    margin-top: -70px;
+}
+
+#condition{
+    margin-bottom: 30px;
+}
+
+.forecast{
+    margin-top: 70px;
+}
+
+#fore_heading{
+    text-align: center;
+}
+
+#fore_days{
+    display: flex;
+    
+}
+
+.forecast_day{
+    width: 20%;   
+    margin: 0px 55px;
+    font-size: 19px;
+}
+
+.forecast-info{
+    margin-top: -15px;
+}
+
+.forecast-info img{
+    margin-left: -80px;
+}
+
+.forecast-info h2{
+    margin-left: 10px;
+    margin-top: -80px;
+}
+
+.forecast-info p{
+    margin-left: -47px;
+}
+
+#one{
+    padding-left: 70px;
+}
+
+footer{
+  margin-top: 80px;
+    text-align: right;
+    position: relative;
+    bottom: 0;
+}
+
+footer p{
+    margin-bottom: -10px;
+}
+
+footer a{
+    color: rgb(216, 16, 109);
+}
+
+footer a:hover{
+    color: white;
+}
+
+
+@media only screen and (max-width: 700px){
+    #fore_days{
+        display: block;
+    }
+    #one{
+        padding: 0px;
+    }
+    .forecast_day{
+        margin-bottom: 80px;
+    }
+}
