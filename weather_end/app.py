@@ -8,8 +8,6 @@ import os
 app = Flask(__name__)
 
 
-api_key = 'c2e0e4f2cf6615c7bff539488fd08b31'
-
 def get_lat_lon(city):
     # fetch geo codes location for the inputed city
     lat_long_url = f'https://api.openweathermap.org/geo/1.0/direct?q={city}&appid={api_key}'
@@ -48,7 +46,6 @@ def get_weather():
 
     if response.status_code == 200:
         data = response.json()
-        print(data)
         return jsonify(data)
     else:
         return (jsonify({'Error': response.status_code}))
