@@ -7,6 +7,7 @@ import os
 
 app = Flask(__name__)
 
+api_key = os.getenv('API_KEY')
 
 def get_lat_lon(city):
     # fetch geo codes location for the inputed city

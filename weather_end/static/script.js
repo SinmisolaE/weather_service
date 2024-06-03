@@ -1,10 +1,7 @@
-console.log("Javascript loaded by simi")
 $(document).ready(function() {
-    console.log("continueee")
-    console.log("continueee")
     $('#weather_form').on('submit', function(event) {
         event.preventDefault();
-        console.log("going")
+
         const city = $('INPUT#cityName').val();
         if (city) {
             $.ajax({
@@ -38,16 +35,12 @@ $(document).ready(function() {
 })
 
 function updateWeather(data) {
-    console.log("working");
-    console.log(data["weather"][0]["description"]);
-    console.log(`https://openweathermap.org/img/wn/${data["weather"][0]["icon"]}@2x.png`);
     $('#icon').attr('src', `https://openweathermap.org/img/wn/${data["weather"][0]["icon"]}@2x.png`);
     $('#weather-temp').text(data["main"]["temp"] + " °C");
     $('#condition').text(data["weather"][0]["description"]);
     $('#wind-speed').text("Wind: " + data["wind"]["speed"] + " m/s");
     $('#humid').text("Humidty: " + data["main"]["humidity"] + "%");
     $('#pressure').text("Pressure: " + data["main"]["pressure"] + " hpa");
-    console.log("happens");
 }
 
 function updateForecast(data) {
